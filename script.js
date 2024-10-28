@@ -1,4 +1,4 @@
-const chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+const chars = "10100";
 
 const randomChar = () => chars[Math.floor(Math.random() * (chars.length - 1))],
       randomString = length => Array.from(Array(length)).map(randomChar).join("");
@@ -14,7 +14,7 @@ const handleOnMove = e => {
   letters.style.setProperty("--x", `${x}px`);
   letters.style.setProperty("--y", `${y}px`);
 
-  letters.innerText = randomString(1500);    
+  letters.innerText = randomString(2000);    
 }
 
 card.onmousemove = e => handleOnMove(e);
